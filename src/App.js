@@ -6,18 +6,12 @@ import { getFirestore, collection, query, orderBy, addDoc, serverTimestamp } fro
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-// Firebase konfigurace
+// Firebase konfig
 const firebaseConfig = {
-  apiKey: "AIzaSyC_UQv0hSXai7FHxFfuuPQc3XNsIMKe2jM",
-  authDomain: "livechat-115cb.firebaseapp.com",
-  projectId: "livechat-115cb",
-  storageBucket: "livechat-115cb.appspot.com",
-  messagingSenderId: "268965808918",
-  appId: "1:268965808918:web:edb6d9a111536aca495e37",
-  measurementId: "G-WJXP1TH2ES"
+  // Insert your kongig
 };
 
-// Inicializace Firebase
+// Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
